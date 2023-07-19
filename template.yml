@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+
+  template:
+    container_name: template
+    image: nodered/node-red:latest
+    restart: always
+    ports:
+      - 2:1880
+    volumes:
+      - ./template/:/data
+
