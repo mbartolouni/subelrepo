@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+
+  bsh:
+    container_name: bsh
+    image: nodered/node-red:latest
+    restart: always
+    ports:
+      - 15:1880
+    volumes:
+      - ./bsh/:/data
