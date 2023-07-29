@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+
+  alprosa:
+    container_name: alprosa
+    image: nodered/node-red:latest
+    restart: always
+    ports:
+      - 3:1880
+    volumes:
+      - ./alprosa/:/data
